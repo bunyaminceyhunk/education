@@ -1,0 +1,12 @@
+{
+  "name": "Winchoos Dashboard",
+  "short_name": "Winchoos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161719",
+  "theme_color": "#161719",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "64x64", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
+

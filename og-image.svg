@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#161719"/>
+      <stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80,100)" font-family="Inter,Arial" fill="#E8E8E8">
+    <text x="0" y="0" font-size="56" font-weight="700">Winchoos Dashboard</text>
+    <text x="0" y="46" font-size="28" fill="#AAAAAA">Yenilikçi, sade ve anlaşılabilir yönetim paneli</text>
+  </g>
+  <g transform="translate(80,240)">
+    <rect width="220" height="120" rx="16" fill="#1B1D1F" stroke="#202226"/>
+    <rect x="240" width="220" height="120" rx="16" fill="#1B1D1F" stroke="#202226"/>
+    <rect x="480" width="220" height="120" rx="16" fill="#1B1D1F" stroke="#202226"/>
+    <rect x="720" width="320" height="120" rx="16" fill="#1B1D1F" stroke="#202226"/>
+  </g>
+  <g transform="translate(80,400)">
+    <rect width="520" height="160" rx="16" fill="#1B1D1F" stroke="#202226"/>
+    <rect x="540" width="280" height="160" rx="16" fill="#1B1D1F" stroke="#202226"/>
+    <rect x="840" width="200" height="160" rx="16" fill="#1B1D1F" stroke="#202226"/>
+  </g>
+  <circle cx="1040" cy="480" r="60" stroke="#3EE15B" stroke-width="14" fill="none"/>
+</svg>
