@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Winchoos Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">winchoos</span>
+        </div>
+        <nav class="nav">
+          <a class="nav-item is-active" href="#">Dashboard</a>
+          <a class="nav-item" href="#">Yarışma yönetimi</a>
+          <a class="nav-item" href="#">İçerik yönetimi</a>
+          <a class="nav-item" href="#">Kullanıcı yönetimi</a>
+          <a class="nav-item" href="#">Sponsor yönetimi</a>
+          <a class="nav-item" href="#">Marka yönetimi</a>
+          <a class="nav-item" href="#">Kategori yönetimi</a>
+          <a class="nav-item" href="#">Puan yönetimi</a>
+          <a class="nav-item" href="#">Bildirim yönetimi</a>
+          <a class="nav-item" href="#">Takvim yönetimi</a>
+          <a class="nav-item" href="#">Raporlama ve analiz</a>
+          <a class="nav-item" href="#">Sistem ve ayarlar</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="icon-btn" id="sidebarToggle" aria-label="Menüyü aç/kapat">
+            <span class="i i-menu"></span>
+          </button>
+          <div class="topbar-actions">
+            <button class="icon-btn" aria-label="Ara"><span class="i i-search"></span></button>
+            <button class="icon-btn" aria-label="Tema"><span class="i i-sun"></span></button>
+            <button class="icon-btn" aria-label="Bildirim"><span class="i i-bell"></span></button>
+            <div class="avatar">BK</div>
+          </div>
+        </header>
+
+        <section class="kpis">
+          <div class="kpi">
+            <div class="kpi-title">Toplam kullanıcı</div>
+            <div class="kpi-value">120K</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-title">Aktif kullanıcı</div>
+            <div class="kpi-value">45K</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-title">Yeni kullanıcı</div>
+            <div class="kpi-value">1,215+</div>
+          </div>
+          <div class="kpi kpi-chart">
+            <div class="kpi-title">Aktif kullanıcı (aylık)</div>
+            <canvas class="spark" data-seed="25"></canvas>
+            <div class="kpi-trend positive">%25 ↑</div>
+          </div>
+          <div class="kpi kpi-chart">
+            <div class="kpi-title">Yarışmaya katılım (aylık)</div>
+            <canvas class="spark" data-seed="33"></canvas>
+            <div class="kpi-trend positive">%33 ↑</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-title">Toplam yarışma</div>
+            <div class="kpi-value">98</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-title">Toplam yarışmacı</div>
+            <div class="kpi-value">443</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-title">Toplam oy</div>
+            <div class="kpi-value">2891</div>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-title">Yarışmacı olmak isteyen kullanıcılar</div>
+            <ul class="list">
+              <li class="list-item">
+                <div class="avatar sm">A</div>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Kullanıcı bilgisi</div>
+                </div>
+                <div class="list-actions">
+                  <button class="chip success">Onay</button>
+                  <button class="chip danger">Reddet</button>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="avatar sm">B</div>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Kullanıcı bilgisi</div>
+                </div>
+                <div class="list-actions">
+                  <button class="chip success">Onay</button>
+                  <button class="chip danger">Reddet</button>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="avatar sm">C</div>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Kullanıcı bilgisi</div>
+                </div>
+                <div class="list-actions">
+                  <button class="chip success">Onay</button>
+                  <button class="chip danger">Reddet</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-tabs">
+              <button class="tab is-active" data-tab="aktif">Aktif yarışmalar</button>
+              <button class="tab" data-tab="siradaki">Sıradaki yarışmalar</button>
+            </div>
+            <ul class="list list-min">
+              <li class="list-item">
+                <span class="status-bar" style="--status:#3EE15B"></span>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Yarışmanın kategorisi</div>
+                </div>
+                <div class="list-meta"><span class="i i-clock"></span> 13.00 - 17.00</div>
+              </li>
+              <li class="list-item">
+                <span class="status-bar" style="--status:#3EE15B"></span>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Yarışmanın kategorisi</div>
+                </div>
+                <div class="list-meta"><span class="i i-clock"></span> 13.00 - 17.00</div>
+              </li>
+              <li class="list-item">
+                <span class="status-bar" style="--status:#3EE15B"></span>
+                <div class="list-main">
+                  <div class="list-title">Yarışmanın konu başlığı</div>
+                  <div class="list-sub">Yarışmanın kategorisi</div>
+                </div>
+                <div class="list-meta"><span class="i i-clock"></span> 13.00 - 17.00</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Seçili yarışmanın konu başlığı</div>
+            <div class="donut-wrap">
+              <canvas id="donut"></canvas>
+              <div class="donut-center">
+                <div class="donut-label">Toplam katılım</div>
+                <div class="donut-value">371</div>
+              </div>
+            </div>
+            <div class="legend">
+              <div class="legend-row"><span class="legend-dot" style="--c:#3EE15B"></span> Giyim <span class="legend-spacer"></span> <span class="legend-meta">Zara</span></div>
+              <div class="legend-row"><span class="legend-dot" style="--c:#AAAAAA"></span> Oy veren <span class="legend-spacer"></span> <span class="legend-meta">297</span></div>
+              <div class="legend-row"><span class="legend-dot" style="--c:#656965"></span> Yarışmacı <span class="legend-spacer"></span> <span class="legend-meta">74</span></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>
+
